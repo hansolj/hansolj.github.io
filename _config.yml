@@ -2,7 +2,7 @@
 
 # Site Settings
 title: Hansol Jeong's Resume
-url: 'https://hansolj.github.io/'
+url: 'https://hansolj.github.io'
 baseurl: '/' #change it according to your repository name
 description: SO
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
@@ -30,5 +30,5 @@ compress_html: # - http://jch.penibelst.de/
 
 # Development Settings
 port: 4000
-host: 0.0.0.0
+host: 127.0.0.1
 safe: false
