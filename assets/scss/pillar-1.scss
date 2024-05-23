@@ -1,16 +1,15 @@
 /*! 
- * Template Name: Pillar - Bootstrap 4 Resume/CV Template for Developers
- * Version: 1.2
+ * Template Name: Pillar - Bootstrap 5 Resume/CV Template for Developers
+ * Version: Bootstrap 5 v3.0
  * Author: Xiaoying Riley
  * Copyright: 3rd Wave Media
  * Twitter: @3rdwave_themes
- * Website: http://themes.3rdwavemedia.com/
+ * Website: https://themes.3rdwavemedia.com/
 */
 
 
 // Define theme colour scheme
 $theme-color-primary: #434E5E;
-
 $theme-text-color-primary: #434E5E;
 $theme-text-color-secondary: lighten($theme-text-color-primary, 10%);
 $theme-text-color-light: lighten($theme-text-color-primary, 40%);
@@ -36,7 +35,27 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $theme-text-color-primary;
+    overflow-x: hidden;
     
+}
+
+a {
+	color: $theme-color-primary;
+	
+	&:hover {
+		color: darken($theme-color-primary, 15%);
+	}
+	
+	&.no-text-decoration {
+		text-decoration: none;
+	}
+}
+
+a.text-link {
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .theme-bg-primary {
@@ -202,6 +221,11 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
 .resume-skill-name {
 	font-size: 0.8125rem;
 	color: $theme-text-color-primary;
+}
+
+.badge-light {
+	color: $theme-text-color-secondary;
+	background: $theme-bg-light;
 }
 
 .resume-degree {
